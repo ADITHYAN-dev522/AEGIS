@@ -1,0 +1,60 @@
+# Python Virtual Environment
+venv/
+.env/
+*.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-selfcheck.json
+
+# Sensitive Files (Keys, Inboxes)
+config/keys/*_priv.pem  # Ignore private keys, but keep public keys
+*.bin  # MixNet inboxes (e.g., inbox_bob.bin)
+*.key
+*.pem.bak
+
+# Steganography Output
+stego_gui_*.jpg  # Generated stego images
+*.jpg.bak
+
+# Logs and Temporary Files
+*.log
+*.tmp
+*.swp
+*.swo
+.xsession-errors
+.xsession-errors.old
+
+# OS-Specific (Kali/Linux)
+.DS_Store
+Thumbs.db
+*.bak
+*.~lock*
+
+# IDE/Editor Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Testing/Coverage
+.coverage
+coverage.xml
+htmlcov/
+.pytest_cache/
+
+# Build/Install Artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Dependency Lock (Optional, if not committed)
+poetry.lock
+
+# Project-Specific Exclusions
+sample_cover.jpg  # Exclude downloaded cover images
+liboqs-python/  # Local clone (if used for PQC build)
