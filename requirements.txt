@@ -1,1 +1,6 @@
-
+cryptography==42.0.5  # For AES, RSA, etc.
+Pillow>=10.4.0      # Image handling for stego
+qrcode==7.4.2         # QR for key exchange demo
+click==8.1.7          # CLI
+pytest==7.4.3         # Tests
+oqs-python==0.9.0     # Post-Quantum Crypto (Kyber stub; install if needed)
